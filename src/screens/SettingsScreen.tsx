@@ -9,7 +9,8 @@ export const SettingsScreen = () => {
 
 
     return (
-        <View style={{marginTop:insets.top}}>
+        //en IOS no es necesario utilizar el hook insets ya que el header del drawer luce bien
+        <View /*style={{marginTop:insets.top}}*/>
             <Text>Settings screen</Text>
         </View>
     )

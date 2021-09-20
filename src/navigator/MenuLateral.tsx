@@ -3,6 +3,7 @@ import { createDrawerNavigator, DrawerContentScrollView } from '@react-navigatio
 import { StackNavigator } from './StackNavigator';
 import { SettingsScreen } from '../screens/SettingsScreen';
 import { Text, useWindowDimensions, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Tabs } from './Tabs';
 
 const Drawer = createDrawerNavigator();
 
@@ -18,7 +19,7 @@ export const  MenuLateral = () => {
         drawerType:(width >= 760)? ('permanent') : ('front'),
       }}
     >
-      <Drawer.Screen name="StackNavigator"  component={StackNavigator} />
+      <Drawer.Screen name="Tabs"  component={Tabs} />
       <Drawer.Screen name="SettingsScreen"  component={SettingsScreen} />
     </Drawer.Navigator>
   );
@@ -33,8 +34,8 @@ const ContenidoMenu=(props:any)=>{
         source={require('../assets/images/avatarPlaceHolder.gif')}
       />
       
-      <TouchableOpacity onPress={()=>props.navigation.navigate('StackNavigator')} style={styles.buttonOpionMenu}>
-        <Text style={styles.textOptionMenu}>Stack Navigator</Text>
+      <TouchableOpacity onPress={()=>props.navigation.navigate('Tabs')} style={styles.buttonOpionMenu}>
+        <Text style={styles.textOptionMenu}>Tabs Navigator</Text>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={()=>props.navigation.navigate('SettingsScreen')}  style={styles.buttonOpionMenu}>

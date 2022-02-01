@@ -52,9 +52,6 @@ const TabsAndroid = () => {
                         iconName='calendar'
                         break;
 
-                    case 'AboutUs':
-                        iconName='person'
-                        break;
                 }
 
                 return <Text style={{color: color}}> <Icon name={iconName} size={20} color={color} /> </Text>
@@ -73,7 +70,7 @@ const TabsAndroid = () => {
       <BottomTabAndroid.Screen name="Tab1Screen" options={{title:'Tab 1'}} component={Tab1Screen} />
       <BottomTabAndroid.Screen name="TopTab" options={{title:'Top Tab'}} component={TopTab} />
       <BottomTabAndroid.Screen name="StackNavigator" options={{title:'Stack'}} component={StackNavigator} />
-      <BottomTabAndroid.Screen name="AboutUs" options={{title:'About Us'}} component={StackNavigator} />
+
     </BottomTabAndroid.Navigator>
   );
 }

@@ -6,6 +6,7 @@ import { AuthState } from './AuthContext';
 type AuthAction = { type:'signIn' }
 
 
+
 //el reducer siempre tiene que regresar algo del tipo de state que esta trabajando en el context por eso en este caso se dice que es del tipo AuthState
 export const authReducer = (state:AuthState, action:AuthAction):AuthState =>{
 

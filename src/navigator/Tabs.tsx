@@ -35,7 +35,7 @@ const TabsAndroid = () => {
                 fontSize:13
             },
             tabBarIcon:({color, focused})=>{
-                console.log("RUTA: ", route.name)
+                
 
                 let iconName:string=''
 
